@@ -10,7 +10,7 @@ class CarFactory:
             current_date: datetime,
             last_service_date: datetime,
             current_mileage: int,
-            last_service_mileage: int
+            last_service_mileage: int,
     ) -> Car:
         engine_type = capulet_engine.CapuletEngine(last_service_mileage, current_mileage)
         battery_type = spindler_battery.SpindlerBattery(last_service_date, current_date)
