@@ -33,7 +33,7 @@ class TestSpindlerBattery(TestCase):
 
     def test_battery_should_be_service(self):
         current_year = datetime.today()
-        last_service_year = current_year.replace(year=current_year.year - 2)
+        last_service_year = current_year.replace(year=current_year.year - 3)
         battery = SpindlerBattery(last_service_year, current_year)
         self.assertTrue(battery.needs_service())
 

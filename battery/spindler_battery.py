@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 class SpindlerBattery(Battery):
-    __SERVICE_INTERVAL = 2
+    __SERVICE_INTERVAL = 3
 
     def __init__(self, last_service_date: datetime, current_date: datetime):
         self.__last_service_date = last_service_date
